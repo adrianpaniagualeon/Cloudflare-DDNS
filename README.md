@@ -18,6 +18,6 @@ Si, este script necesita la librería [Requests](https://requests.readthedocs.io
 |CLOUDFLARE_EMAIL|CORREO ELECTRÓNICO UTILIZADO PARA REGISTRARTE EN CLOUDFLARE|
 |CLOUDFLARE_CLAVE|GLOBAL API KEY DE CLOUDFLARE. Puedes encontrarla en [https://dash.cloudflare.com/profile/api-tokens](https://dash.cloudflare.com/profile/api-tokens)|
 |DOMAIN|DOMINIO QUE QUEREMOS ACTUALIZAR. En caso de querer actualizar cv.adrianpaniagua.es **SOLO** introduciremos adrianpaniagua.es|
-|SUBDOMAIN|SUBDOMINIO QUE QUEREMOS ACTUALIZAR. En caso de querer actualizar blog.adrianpaniagua.es **SOLO** introduciremos adrianpaniagua.es. Si queremos actualizar el dominio principal, dejaremos este campo vacio|
+|SUBDOMAIN|SUBDOMINIO QUE QUEREMOS ACTUALIZAR. En caso de querer actualizar cv.adrianpaniagua.es **SOLO** introduciremos cv (Si queremos actualizar el dominio principal, dejaremos este campo vacio)|
 
 Tienes que modificar el archivo ddns.py con tus datos para que el script funcione. Es muy importante no introducir espacios para que todo funcione correctamente.
