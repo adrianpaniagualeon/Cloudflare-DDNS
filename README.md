@@ -20,4 +20,4 @@ Si, este script necesita la librería [Requests](https://requests.readthedocs.io
 |DOMAIN|DOMINIO QUE QUEREMOS ACTUALIZAR. En caso de querer actualizar cv.adrianpaniagua.es **SOLO** introduciremos adrianpaniagua.es|
 |SUBDOMAIN|SUBDOMINIO QUE QUEREMOS ACTUALIZAR. En caso de querer actualizar blog.adrianpaniagua.es **SOLO** introduciremos adrianpaniagua.es. Si queremos actualizar el dominio principal, dejaremos este campo vacio|
 
-Tienes que modificar el archivo ddns.py con tus datos para que el script funcione. Es muy importante no incluir espacios para que todo funcione correctamente.
+Tienes que modificar el archivo ddns.py con tus datos para que el script funcione. Es muy importante no introducir espacios para que todo funcione correctamente.
