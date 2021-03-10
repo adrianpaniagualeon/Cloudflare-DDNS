@@ -87,14 +87,17 @@ def change_dns():
 
 
 while True:
-	print ("-------------------------------------------")
-	print ("WEB ["+subdomain+"]")
-	get_ip()
-	print ("CURRENT IP ["+my_ip+"]")
-	get_zones()
-	get_dns()
-	print ("CLOUDLFARE IP ["+my_dns_ip+"]")
-	change_dns()
-	print ("WAITING 5 MINUTES BEFORE THE NEXT EXECUTION")
-	print ("-------------------------------------------\n\n")
-	time.sleep(300)
+	try:
+		print ("-------------------------------------------")
+		print ("WEB ["+subdomain+"]")
+		get_ip()
+		print ("CURRENT IP ["+my_ip+"]")
+		get_zones()
+		get_dns()
+		print ("CLOUDLFARE IP ["+my_dns_ip+"]")
+		change_dns()
+		print ("WAITING 5 MINUTES BEFORE THE NEXT EXECUTION")
+		print ("-------------------------------------------\n\n")
+		time.sleep(300)
+	except:
+		pass
