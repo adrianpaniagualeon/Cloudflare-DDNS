@@ -13,6 +13,9 @@ CLOUDFLARE_EMAIL = ""
 CLOUDFLARE_CLAVE = ""
 DOMAIN = ""
 SUBDOMAIN = ""
+#   ⬇️ Fill it in only if you are going to use the Telegram BOT ⬇️    #
+TOKEN = ""
+CID = ""
 #####################################################################
 
 
@@ -77,6 +80,7 @@ def get_dns():
 
 
 def change_dns():
+	global STATUS
 	if (my_dns_ip == my_ip):
 		print ("THE IP ADDRESS HAS NOT CHANGED")
 	else:
@@ -84,6 +88,7 @@ def change_dns():
 		url = "https://api.cloudflare.com/client/v4/zones/"+my_zone_id+"/dns_records/"+my_dns_id
 		r = requests.patch(url, json=parametros, headers = headers)
 		print ("THE IP ADDRESS HAS CHANGED")
+		STATUS = r.text
 
 
 while True:
@@ -100,4 +105,8 @@ while True:
 		print ("-------------------------------------------\n\n")
 		time.sleep(300)
 	except:
-		pass
+		if (TOKEN == ""):
+			pass
+		else:
+			requests.post('https://api.telegram.org/bot'+TOKEN+'/sendMessage',data={'chat_id': CID, 'text': "Ha habido un problema al actualizar los DNS del dominio"+subdomain+"\n STATUS: "+STATUS})
+			time.sleep(300)
