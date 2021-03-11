@@ -25,6 +25,7 @@ Si, este script necesita la librería [Requests](https://requests.readthedocs.io
 |SUBDOMAIN|SUBDOMINIO QUE QUEREMOS ACTUALIZAR. En caso de querer actualizar cv.adrianpaniagua.es **SOLO** introduciremos cv (Si queremos actualizar el dominio principal, dejaremos este campo vacio)|
 |TOKEN|TOKEN del Bot de Telegram|
 |CID|Tu Chat ID de Telegram|
+
 Tienes que modificar el archivo ddns.py con tus datos para que el script funcione. Es muy importante no introducir espacios para que todo funcione correctamente.
 
 ## ¿Cómo puedo colaborar?
