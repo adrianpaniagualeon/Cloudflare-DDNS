@@ -29,7 +29,7 @@ Si, este script necesita la librería [Requests](https://requests.readthedocs.io
 Tienes que modificar el archivo ddns.py con tus datos para que el script funcione. Es muy importante no introducir espacios para que todo funcione correctamente.
 
 ## ¿Cómo puedo colaborar?
-Existen dos formas de colaborar:
+Existen tres formas de colaborar:
 - Añadiendo nuevas funcionalidades al bot mediante _pull-request_. 
 - Aportación económica: Puedes aportar tu granito de arena por [Paypal](https://paypal.me/panleoad)
 - Invitarme a un café: Me puedes invitar a un café a través de [Ko-Fi](https://ko-fi.com/adrianpaniagualeon)
